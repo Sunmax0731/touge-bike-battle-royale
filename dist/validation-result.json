@@ -1,0 +1,54 @@
+{
+  "product": "touge-bike-battle-royale",
+  "result": "pass",
+  "representativeSuite": {
+    "requiredScenarioTypes": [
+      "happy-path",
+      "missing-required",
+      "warning",
+      "mixed-batch"
+    ],
+    "scenarioCount": 4,
+    "results": [
+      {
+        "id": "happy-path",
+        "type": "happy-path",
+        "status": "pass",
+        "accepted": 1,
+        "warnings": 0,
+        "score": 96
+      },
+      {
+        "id": "missing-required",
+        "type": "missing-required",
+        "status": "error",
+        "accepted": 0,
+        "warnings": 0,
+        "score": 0
+      },
+      {
+        "id": "warning",
+        "type": "warning",
+        "status": "warning",
+        "accepted": 1,
+        "warnings": 1,
+        "score": 86
+      },
+      {
+        "id": "mixed-batch",
+        "type": "mixed-batch",
+        "status": "warning",
+        "accepted": 2,
+        "warnings": 2,
+        "score": 78
+      }
+    ]
+  },
+  "generatedArtifacts": [
+    "dist/validation-result.json",
+    "dist/web-smoke-result.json",
+    "dist/touge-bike-battle-royale-docs.zip"
+  ],
+  "stability": "no timestamps, host paths, random values, or ZIP byte size are recorded",
+  "mojibakeHits": []
+}

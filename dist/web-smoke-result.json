@@ -1,0 +1,28 @@
+{
+  "product": "touge-bike-battle-royale",
+  "method": "static DOM and app-module smoke equivalent for GitHub Pages/local static hosting",
+  "result": "pass",
+  "checks": [
+    {
+      "name": "nonblank-html",
+      "pass": true
+    },
+    {
+      "name": "app-root",
+      "pass": true
+    },
+    {
+      "name": "scenario-controls",
+      "pass": true
+    },
+    {
+      "name": "visual-surface",
+      "pass": true
+    },
+    {
+      "name": "primary-operation",
+      "pass": true
+    }
+  ],
+  "manualBrowserStatus": "not-executed-by-codex"
+}
