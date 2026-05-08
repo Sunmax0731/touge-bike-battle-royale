@@ -5,9 +5,11 @@
   "type": "module",
   "description": "峠バイク・バトルロイヤル closed alpha",
   "scripts": {
-    "test": "node --test tests/*.test.js && node scripts/validate.js",
+    "test": "node --test tests/*.test.js && node scripts/validate.js && node tools/platform-runtime-gate.mjs && node tools/closed-alpha-guard.mjs",
     "validate": "node scripts/validate.js",
-    "cli": "node src/cli/index.js --suite samples/representative-suite.json"
+    "cli": "node src/cli/index.js --suite samples/representative-suite.json",
+    "platform:gate": "node tools/platform-runtime-gate.mjs",
+    "closed-alpha:guard": "node tools/closed-alpha-guard.mjs"
   },
   "repository": {
     "type": "git",

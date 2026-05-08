@@ -1,44 +1,56 @@
 {
-    "product":  "touge-bike-battle-royale",
-    "tag":  "v0.1.0-alpha.1",
-    "github":  {
-                   "owner":  "Sunmax0731",
-                   "repo":  "touge-bike-battle-royale",
-                   "url":  "https://github.com/Sunmax0731/touge-bike-battle-royale",
-                   "releaseUrl":  "https://github.com/Sunmax0731/touge-bike-battle-royale/releases/tag/v0.1.0-alpha.1",
-                   "prerelease":  true,
-                   "draft":  false,
-                   "latest":  false,
-                   "latestVerification":  "releases/latest returned no stable release",
-                   "targetCommitish":  "main"
-               },
-    "assets":  {
-                   "required":  [
-                                    "dist/touge-bike-battle-royale-docs.zip",
-                                    "docs/manual-test.md",
-                                    "docs/strict-manual-test-addendum.md"
-                                ],
-                   "actualNames":  [
-                                       "manual-test.md",
-                                       "strict-manual-test-addendum.md",
-                                       "touge-bike-battle-royale-docs.zip"
-                                   ],
-                   "actualCount":  3,
-                   "allRequiredPresent":  true
-               },
-    "validation":  {
-                       "automated":  "npm test",
-                       "browser":  "Chrome headless file screenshot plus Browser localhost spot check",
-                       "manualTest":  "not-executed-by-codex",
-                       "qcdsMinimum":  "A-",
-                       "releasePrereleaseVerified":  true,
-                       "releaseLatestFalseVerified":  true,
-                       "mainOriginAheadBehind":  "0\t0",
-                       "localCodexBranches":  [
-
-                                              ],
-                       "remoteCodexBranches":  [
-
-                                               ]
-                   }
+  "product": "touge-bike-battle-royale",
+  "tag": "v0.1.0-alpha.1",
+  "github": {
+    "owner": "Sunmax0731",
+    "repo": "Sunmax0731/touge-bike-battle-royale",
+    "url": "https://github.com/Sunmax0731/touge-bike-battle-royale",
+    "releaseUrl": "https://github.com/Sunmax0731/touge-bike-battle-royale/releases/tag/v0.1.0-alpha.1",
+    "prerelease": true,
+    "draft": false,
+    "latest": false,
+    "latestVerification": "releases/latest returned no stable release",
+    "targetCommitish": "main"
+  },
+  "assets": {
+    "required": [
+      "dist/touge-bike-battle-royale-docs.zip",
+      "docs/manual-test.md",
+      "docs/strict-manual-test-addendum.md"
+    ],
+    "actualNames": [
+      "manual-test.md",
+      "strict-manual-test-addendum.md",
+      "touge-bike-battle-royale-docs.zip"
+    ],
+    "actualCount": 3,
+    "allRequiredPresent": true
+  },
+  "validation": {
+    "automated": "npm test",
+    "browser": "Chrome headless file screenshot plus Browser localhost spot check",
+    "manualTest": "not-executed-by-codex",
+    "qcdsMinimum": "A-",
+    "releasePrereleaseVerified": true,
+    "releaseLatestFalseVerified": true,
+    "mainOriginAheadBehind": "0\t0",
+    "localCodexBranches": [],
+    "remoteCodexBranches": []
+  },
+  "repository": "Sunmax0731/touge-bike-battle-royale",
+  "githubUrl": "https://github.com/Sunmax0731/touge-bike-battle-royale",
+  "releaseUrl": "https://github.com/Sunmax0731/touge-bike-battle-royale/releases/tag/v0.1.0-alpha.1",
+  "prerelease": true,
+  "latest": false,
+  "assetCount": 3,
+  "platformRuntimeGate": "dist/platform-runtime-gate-result.json",
+  "platformType": "browser-web",
+  "manualTest": "not-run-by-codex",
+  "qcdsEvaluation": {
+    "Quality": "S-",
+    "Cost": "S-",
+    "Delivery": "S-",
+    "Satisfaction": "S-",
+    "capReason": "manual-test-not-run-by-codex"
+  }
 }

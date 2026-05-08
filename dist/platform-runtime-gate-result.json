@@ -1,0 +1,10 @@
+{
+  "product": "touge-bike-battle-royale",
+  "platformType": "browser-web",
+  "pass": true,
+  "method": "runtime-gate",
+  "manualTest": "not-run-by-codex",
+  "index": "index.html",
+  "browser": "chrome.exe",
+  "evidence": "dist/web-smoke-result.json"
+}
