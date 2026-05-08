@@ -67,17 +67,15 @@
     "platformRuntimeGate": "passed",
     "qcdsMinimum": "A-",
     "manualTest": "not-run-by-codex",
-    "gitCleanAtEvidenceWrite": false
+    "gitCleanAtEvidenceWrite": true
   },
   "manualTest": "not-run-by-codex",
   "git": {
     "ahead": 0,
     "behind": 0,
     "status": "",
-    "localCodex": [
-      "codex/closed-alpha-release"
-    ],
+    "localCodex": [],
     "remoteCodex": [],
-    "clean": false
+    "clean": true
   }
 }
