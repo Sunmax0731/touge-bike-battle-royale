@@ -1,0 +1,13 @@
+{
+  "product": "touge-bike-battle-royale",
+  "title": "峠バイク・バトルロイヤル",
+  "domain": "Game",
+  "ideaNo": 10,
+  "platformType": "browser-web",
+  "expectedPublicTarget": "Google Play / BOOTH",
+  "browser": {
+    "evidence": "dist/web-smoke-result.json"
+  },
+  "android": null,
+  "evidence": "dist/platform-runtime-gate-result.json"
+}

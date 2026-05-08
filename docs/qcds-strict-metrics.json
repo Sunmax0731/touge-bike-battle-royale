@@ -27,10 +27,14 @@
   "manualTestStatus": "manual-test-not-executed-by-codex",
   "manualTestCapApplied": true,
   "platformRuntimeGate": {
-    "scope": "static Web gameplay prototype; Android/Unity は post-MVP",
-    "webSmoke": "dist/web-smoke-result.json",
-    "result": "pass",
-    "method": "chrome-headless-file-screenshot"
+    "product": "touge-bike-battle-royale",
+    "platformType": "browser-web",
+    "pass": true,
+    "method": "runtime-gate",
+    "manualTest": "not-run-by-codex",
+    "index": "index.html",
+    "browser": "chrome.exe",
+    "evidence": "dist/web-smoke-result.json"
   },
   "evidence": {
     "representativeSuite": "samples/representative-suite.json",
@@ -39,5 +43,17 @@
     "releaseChecklist": "docs/release-checklist.md",
     "releaseEvidence": "docs/release-evidence.json"
   },
-  "belowAMinus": []
+  "belowAMinus": [],
+  "gradeScale": [
+    "S+",
+    "S-",
+    "A+",
+    "A-",
+    "B+",
+    "B-",
+    "C+",
+    "C-",
+    "D+",
+    "D-"
+  ]
 }

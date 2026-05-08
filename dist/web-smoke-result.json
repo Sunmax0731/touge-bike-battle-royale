@@ -1,81 +1,15 @@
 {
   "product": "touge-bike-battle-royale",
+  "result": "passed",
   "method": "chrome-headless-file-screenshot",
-  "browserStatus": "completed",
-  "result": "pass",
-  "checks": [
-    {
-      "name": "nonblank-html",
-      "pass": true
-    },
-    {
-      "name": "app-root",
-      "pass": true
-    },
-    {
-      "name": "scenario-controls-source",
-      "pass": true
-    },
-    {
-      "name": "visual-surface-source",
-      "pass": true
-    },
-    {
-      "name": "primary-operation-source",
-      "pass": true
-    },
-    {
-      "name": "hash-scenario-routing-source",
-      "pass": true
-    },
-    {
-      "name": "chrome-exit-zero:happy-path",
-      "pass": true
-    },
-    {
-      "name": "screenshot-created:happy-path",
-      "pass": true
-    },
-    {
-      "name": "screenshot-nonblank:happy-path",
-      "pass": true
-    },
-    {
-      "name": "chrome-exit-zero:missing-required",
-      "pass": true
-    },
-    {
-      "name": "screenshot-created:missing-required",
-      "pass": true
-    },
-    {
-      "name": "screenshot-nonblank:missing-required",
-      "pass": true
-    },
-    {
-      "name": "chrome-exit-zero:warning",
-      "pass": true
-    },
-    {
-      "name": "screenshot-created:warning",
-      "pass": true
-    },
-    {
-      "name": "screenshot-nonblank:warning",
-      "pass": true
-    },
-    {
-      "name": "chrome-exit-zero:mixed-batch",
-      "pass": true
-    },
-    {
-      "name": "screenshot-created:mixed-batch",
-      "pass": true
-    },
-    {
-      "name": "screenshot-nonblank:mixed-batch",
-      "pass": true
-    }
-  ],
-  "manualBrowserStatus": "codex-chrome-smoke-completed; user manual test remains not executed by Codex"
+  "browser": "chrome.exe",
+  "index": "index.html",
+  "checks": {
+    "nonBlankScreenshot": true,
+    "htmlHasContent": true,
+    "productMarker": true,
+    "noFrameworkOverlay": true
+  },
+  "screenshotBytesStableThreshold": ">1000",
+  "manualBrowserTest": "not-run-by-codex"
 }
