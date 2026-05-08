@@ -1,0 +1,10 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import { validateRepresentativeSuite } from "../src/validators/scenarioValidator.js";
+import { product, summarizeProduct } from "../src/core/product.js";
+const suite = JSON.parse(fs.readFileSync("samples/representative-suite.json", "utf8"));
+test("representative suite includes required scenario ids", () => assert.deepEqual(suite.scenarios.map((s) => s.id), ["happy-path","missing-required","warning","mixed-batch"]));
+test("expected results match evaluator output", () => { const v = validateRepresentativeSuite(suite); assert.equal(v.ok, true, JSON.stringify(v, null, 2)); });
+test("product summary exposes release and responsibility boundaries", () => { const s = summarizeProduct(); assert.equal(s.repo, product.repo); assert.ok(s.requiredInputs.length >= 4); assert.ok(s.responsibilities.length >= 4); });
+test("required closed alpha docs exist", () => { const required = ["README.md","AGENTS.md","SKILL.md","docs/requirements.md","docs/specification.md","docs/design.md","docs/implementation-plan.md","docs/test-plan.md","docs/manual-test.md","docs/installation-guide.md","docs/user-guide.md","docs/release-checklist.md","docs/responsibility-map.md","docs/ui-ux-polish.md","docs/post-mvp-roadmap.md","docs/competitive-benchmark.md","docs/evaluation-criteria.md","docs/qcds-evaluation.md","docs/qcds-remote-benchmark.md","docs/qcds-strict-gap-analysis.md","docs/qcds-strict-metrics.json","docs/qcds-regression-baseline.json","docs/security-privacy-checklist.md","docs/traceability-matrix.md","docs/strict-manual-test-addendum.md","docs/source-idea-pack.json","docs/release-evidence.json","docs/releases/v0.1.0-alpha.1.md"]; assert.deepEqual(required.filter((file) => !fs.existsSync(file)), []); });

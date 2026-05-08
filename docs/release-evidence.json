@@ -1,0 +1,26 @@
+{
+  "product": "touge-bike-battle-royale",
+  "tag": "v0.1.0-alpha.1",
+  "status": "pending-release-api-confirmation",
+  "github": {
+    "repository": "Sunmax0731/touge-bike-battle-royale",
+    "url": "https://github.com/Sunmax0731/touge-bike-battle-royale",
+    "releaseUrl": null,
+    "prerelease": null,
+    "latestCheck": null
+  },
+  "assets": [
+    "dist/touge-bike-battle-royale-docs.zip",
+    "docs/manual-test.md",
+    "docs/strict-manual-test-addendum.md"
+  ],
+  "validation": {
+    "npmTest": "pass-before-release",
+    "manualTest": "not-executed-by-codex",
+    "qcdsMinimum": "A-"
+  },
+  "git": {
+    "finalMainOriginStatus": "pending-final-check",
+    "codexBranches": "pending-final-check"
+  }
+}

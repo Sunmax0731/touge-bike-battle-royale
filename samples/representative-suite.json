@@ -1,0 +1,87 @@
+{
+  "product": "touge-bike-battle-royale",
+  "rank": 70,
+  "scenarios": [
+    {
+      "id": "happy-path",
+      "type": "happy-path",
+      "title": "峠ラインの通常処理",
+      "inputs": {
+        "bikeClass": "light",
+        "riderInput": "lean-left",
+        "trackSegment": "hairpin-03",
+        "matchState": "safe-pack"
+      },
+      "expected": {
+        "status": "pass",
+        "accepted": 1,
+        "warnings": 0
+      }
+    },
+    {
+      "id": "missing-required",
+      "type": "missing-required",
+      "title": "trackSegment不足時の停止",
+      "inputs": {
+        "bikeClass": "light",
+        "riderInput": "lean-left",
+        "trackSegment": "",
+        "matchState": "safe-pack"
+      },
+      "expected": {
+        "status": "error",
+        "accepted": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "id": "warning",
+      "type": "warning",
+      "title": "Bot集団の注意喚起",
+      "inputs": {
+        "bikeClass": "heavy",
+        "riderInput": "late-brake",
+        "trackSegment": "wet-hairpin",
+        "matchState": "near-elimination"
+      },
+      "flags": [
+        "needsReview"
+      ],
+      "expected": {
+        "status": "warning",
+        "accepted": 1,
+        "warnings": 1
+      }
+    },
+    {
+      "id": "mixed-batch",
+      "type": "mixed-batch",
+      "title": "脱落判定を含む混在バッチ",
+      "items": [
+        {
+          "bikeClass": "light",
+          "riderInput": "lean-left",
+          "trackSegment": "hairpin-03",
+          "matchState": "safe-pack"
+        },
+        {
+          "bikeClass": "light",
+          "riderInput": "lean-left",
+          "trackSegment": "",
+          "matchState": "safe-pack"
+        },
+        {
+          "bikeClass": "heavy",
+          "riderInput": "late-brake",
+          "trackSegment": "wet-hairpin",
+          "matchState": "near-elimination"
+        }
+      ],
+      "expected": {
+        "status": "warning",
+        "accepted": 2,
+        "warnings": 2
+      }
+    }
+  ]
+}
