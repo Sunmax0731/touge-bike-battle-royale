@@ -1,1 +1,1 @@
-export function balanceScore(result) { if (result.status === "error") return 0; if (result.status === "warning") return 70 + result.accepted * 5; return 95; }
+export function balanceScore(score) { if (score >= 90) return 'stable'; if (score >= 70) return 'needs-tuning'; return 'blocked'; }

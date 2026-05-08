@@ -44,6 +44,7 @@
       }
     ]
   },
+  "platformRuntimeGate": "static Web gameplay prototype; Android/Unity は post-MVP",
   "generatedArtifacts": [
     "dist/validation-result.json",
     "dist/web-smoke-result.json",

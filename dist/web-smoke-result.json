@@ -1,6 +1,7 @@
 {
   "product": "touge-bike-battle-royale",
-  "method": "static DOM and app-module smoke equivalent for GitHub Pages/local static hosting",
+  "method": "chrome-headless-file-screenshot",
+  "browserStatus": "completed",
   "result": "pass",
   "checks": [
     {
@@ -12,17 +13,69 @@
       "pass": true
     },
     {
-      "name": "scenario-controls",
+      "name": "scenario-controls-source",
       "pass": true
     },
     {
-      "name": "visual-surface",
+      "name": "visual-surface-source",
       "pass": true
     },
     {
-      "name": "primary-operation",
+      "name": "primary-operation-source",
+      "pass": true
+    },
+    {
+      "name": "hash-scenario-routing-source",
+      "pass": true
+    },
+    {
+      "name": "chrome-exit-zero:happy-path",
+      "pass": true
+    },
+    {
+      "name": "screenshot-created:happy-path",
+      "pass": true
+    },
+    {
+      "name": "screenshot-nonblank:happy-path",
+      "pass": true
+    },
+    {
+      "name": "chrome-exit-zero:missing-required",
+      "pass": true
+    },
+    {
+      "name": "screenshot-created:missing-required",
+      "pass": true
+    },
+    {
+      "name": "screenshot-nonblank:missing-required",
+      "pass": true
+    },
+    {
+      "name": "chrome-exit-zero:warning",
+      "pass": true
+    },
+    {
+      "name": "screenshot-created:warning",
+      "pass": true
+    },
+    {
+      "name": "screenshot-nonblank:warning",
+      "pass": true
+    },
+    {
+      "name": "chrome-exit-zero:mixed-batch",
+      "pass": true
+    },
+    {
+      "name": "screenshot-created:mixed-batch",
+      "pass": true
+    },
+    {
+      "name": "screenshot-nonblank:mixed-batch",
       "pass": true
     }
   ],
-  "manualBrowserStatus": "not-executed-by-codex"
+  "manualBrowserStatus": "codex-chrome-smoke-completed; user manual test remains not executed by Codex"
 }

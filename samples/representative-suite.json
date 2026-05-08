@@ -5,7 +5,7 @@
     {
       "id": "happy-path",
       "type": "happy-path",
-      "title": "峠ラインの通常処理",
+      "title": "峠バイク・バトルロイヤルの通常フロー",
       "inputs": {
         "bikeClass": "light",
         "riderInput": "lean-left",
@@ -21,7 +21,7 @@
     {
       "id": "missing-required",
       "type": "missing-required",
-      "title": "trackSegment不足時の停止",
+      "title": "bikeClass不足時の停止",
       "inputs": {
         "bikeClass": "light",
         "riderInput": "lean-left",
@@ -37,7 +37,7 @@
     {
       "id": "warning",
       "type": "warning",
-      "title": "Bot集団の注意喚起",
+      "title": "脱落寸前の警告",
       "inputs": {
         "bikeClass": "heavy",
         "riderInput": "late-brake",
@@ -56,7 +56,7 @@
     {
       "id": "mixed-batch",
       "type": "mixed-batch",
-      "title": "脱落判定を含む混在バッチ",
+      "title": "正常・不足・警告を含む混在バッチ",
       "items": [
         {
           "bikeClass": "light",

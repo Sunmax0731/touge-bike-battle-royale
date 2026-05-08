@@ -1,17 +1,17 @@
 # 仕様
 
-対象: 峠バイク・バトルロイヤル (Rank 70, Game No.10)
+- 名称: 峠バイク・バトルロイヤル
+- Repo: touge-bike-battle-royale
+- Closed alpha platform: static Web gameplay prototype; Android/Unity は post-MVP
+- 主な公開先: Google Play / BOOTH
 
-| 入力 | 用途 |
-| bikeClass | 峠バイク・バトルロイヤル の評価、表示、レポートに必要 |
-| riderInput | 峠バイク・バトルロイヤル の評価、表示、レポートに必要 |
-| trackSegment | 峠バイク・バトルロイヤル の評価、表示、レポートに必要 |
-| matchState | 峠バイク・バトルロイヤル の評価、表示、レポートに必要 |
+## 入力
 
-## 出力
+- `bikeClass`
+- `riderInput`
+- `trackSegment`
+- `matchState`
 
-- `dist/validation-result.json`
-- `dist/web-smoke-result.json`
-- `docs/qcds-strict-metrics.json`
-- `docs/qcds-regression-baseline.json`
-- `dist/touge-bike-battle-royale-docs.zip`
+## 主要機能
+
+代表シナリオ評価、Web表示、CLI評価、docs / QCDS / release evidence 生成。

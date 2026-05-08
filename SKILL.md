@@ -1,11 +1,7 @@
 # SKILL
 
-峠バイク・バトルロイヤル の実装・検証スキルです。
-
-## Start Order
-
-1. `docs/source-idea-pack.json` で Rank、source ZIP、metadata 一致を確認する。
-2. `docs/requirements.md`、`docs/specification.md`、`docs/design.md` を読む。
-3. `src/game` と `index.html` のゲームループ/表示境界を確認する。
-4. `npm test` を実行し、再実行後に Git 差分が出ないことを確認する。
-5. prerelease 後は `docs/release-evidence.json` を更新し、docs ZIP と release assets を再同期する。
+1. `npm test` で代表シナリオと Chrome headless smoke を実行する。
+2. `dist/validation-result.json` と `dist/web-smoke-result.json` が pass であることを確認する。
+3. `docs/qcds-strict-metrics.json` の grade が10段階スケール内で、全観点 `A-` 以上であることを確認する。
+4. `dist/touge-bike-battle-royale-docs.zip`、`docs/manual-test.md`、`docs/strict-manual-test-addendum.md` を release asset として添付する。
+5. QCDSは docs と ZIP の存在確認だけで通さず、GitHub Pagesまたはローカルサーバーで起動できる静的Webゲームとして、非blank表示と主要操作を必須とする。

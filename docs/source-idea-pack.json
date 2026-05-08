@@ -1,52 +1,33 @@
 {
   "product": "touge-bike-battle-royale",
   "rank": 70,
-  "tier": "P3",
-  "score": 48,
-  "domain": "Game",
   "ideaNo": 10,
-  "ideaName": "峠バイク・バトルロイヤル",
-  "publicTarget": "Google Play / BOOTH",
-  "formalRepoReadmeBeforeStart": "missing",
-  "nonPickupPrioritizedIdeas": {
-    "path": "D:/AI/IDEAS/NON_PICKUP_PRIORITIZED_IDEAS.md",
-    "rowBasis": "Rank 70 priority-list row, not Idea No order",
-    "note": "Priority table Japanese text was mojibake, so normalized idea name comes from ZIP metadata."
-  },
-  "lookup": {
-    "exactCreatedIdeaFolder": "D:/AI/Game/created_idea_010_touge-bike-battle-royale",
-    "exactCreatedIdeaFolderExists": true,
-    "exactZipFile": "D:/AI/Game/created_idea_010_touge-bike-battle-royale/idea_010_touge-bike-battle-royale.zip",
-    "exactZipFileExists": true,
-    "fallbackUsed": false,
-    "fallbackSearches": []
-  },
-  "zipMetadata": {
-    "domain": "Game",
-    "no": 10,
-    "idea": "峠バイク・バトルロイヤル",
-    "repositoryName": "touge-bike-battle-royale",
-    "zipFile": "idea_010_touge-bike-battle-royale.zip",
-    "repositoryNameMatches": true
-  },
-  "requiredZipDocuments": {
-    "metadata.json": true,
-    "START_PROMPT.md": true,
-    "README.md": true,
-    "01_REQUIREMENTS.md": true,
-    "02_SPECIFICATION.md": true,
-    "03_DESIGN.md": true,
-    "04_IMPLEMENTATION_PLAN.md": true,
-    "05_TEST_PLAN.md": true,
-    "06_RELEASE_CHECKLIST.md": true
-  },
-  "domainDocs": [
-    "D:/AI/IDEAS/Game/Design.md",
-    "D:/AI/IDEAS/Game/Architecture.md",
-    "D:/AI/IDEAS/Game/AGENTS.md",
-    "D:/AI/IDEAS/Game/SKILL.md",
-    "D:/AI/Game/AGENTS.md",
-    "D:/AI/Game/SKILL.md"
+  "domain": "Game",
+  "nonPickupRow": "| 70 | P3 | 48 | Game | 10 | 峠バイク・バトルロイヤル | touge-bike-battle-royale | Google Play / BOOTH | 3D、大人数、スマホ対戦は範囲が大きく、まずは操作感と脱落ルールを小さく固定する必要がある。 |",
+  "lookupRule": "exact created_idea and ZIP names were checked before fallback exploration",
+  "exactCreatedIdeaPath": "D:/AI/Game/created_idea_010_touge-bike-battle-royale",
+  "exactCreatedIdeaExists": true,
+  "ideasCreatedIdeaPath": "D:/AI/IDEAS/Game/created_idea_010_touge-bike-battle-royale",
+  "ideasCreatedIdeaExists": true,
+  "zipCandidates": [
+    {
+      "path": "D:/AI/Game/idea_010_touge-bike-battle-royale.zip",
+      "exists": true
+    },
+    {
+      "path": "D:/AI/Game/created_idea_010_touge-bike-battle-royale/idea_010_touge-bike-battle-royale.zip",
+      "exists": true
+    },
+    {
+      "path": "D:/AI/IDEAS/Game/idea_010_touge-bike-battle-royale.zip",
+      "exists": true
+    },
+    {
+      "path": "D:/AI/IDEAS/Game/created_idea_010_touge-bike-battle-royale/idea_010_touge-bike-battle-royale.zip",
+      "exists": true
+    }
   ],
-  "reconstructionPolicy": "Formal docs are regenerated in readable Japanese from NON PICKUP row, ZIP metadata, and domain docs; mojibake text is not copied."
+  "fallbackExploration": "not-required",
+  "reconstructionPolicy": "Do not copy mojibake text. Formal docs use clean Japanese based on NON_PICKUP row, domain docs, and available metadata.",
+  "repoReadmeAtStart": "exists"
 }

@@ -9,6 +9,7 @@
   ],
   "expectedValidationResult": "pass",
   "expectedWebSmokeResult": "pass",
+  "expectedQcdsMinimum": "A-",
   "manualTestStatus": "not-executed",
   "releaseAssetContract": [
     "dist/touge-bike-battle-royale-docs.zip",
